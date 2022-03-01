@@ -1,0 +1,42 @@
+@use "../../scss" as *;
+
+.person {
+  margin-top: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  &__info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid $light-blue;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    color: $orange;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__jobs {
+    color: $dark-blue;
+  }
+
+  &__text {
+    color: $blue;
+    margin: 2rem 2.5rem 0;
+    line-height: 2;
+  }
+
+  &__quote i {
+    color: $orange;
+    font-size: 48px;
+    margin-top: 20px;
+  }
+}
